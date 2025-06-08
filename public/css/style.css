@@ -401,6 +401,37 @@
 .contact-form button:hover {
   background-color: #b50e35;
 }
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
 
 @media (max-width: 768px) {
   .contact-grid {
