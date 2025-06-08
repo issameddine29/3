@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morais Cleaning Services</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Icon Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Style principal -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./public/img/logo/Adobe Express - file.png" alt="Morais Cleaning" />
+            </div>
+            <button class="toggle-btn" id="menuToggle">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Nettoyage Airbnb</a></li>
+                        <li><a href="#">Après chantier</a></li>
+                        <li><a href="#">Bureaux</a></li>
+                        <li><a href="#">Vitres</a></li>
+                        <li><a href="#">Tapis</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#devis" class="btn-devis">Devis gratuit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HÉRO -->
+    <section class="hero">
+        <div class="line"></div>
+        <h1 class="reveal-text">Bienvenue chez Morais Cleaning</h1>
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="bubble-area"></div>
+
+                <div class="text-zone">
+                    <h4 class="subtitle">À propos de Morais Cleaning</h4>
+                    <h1 class="title">Experts en propreté, au service de vos espaces</h1>
+                    <p class="description">
+                        Chez <strong>Morais Cleaning</strong>, nous sommes bien plus qu’une simple entreprise de
+                        nettoyage : nous sommes vos partenaires pour un environnement impeccable, sain et professionnel.
+                    </p>
+                    <p class="description">
+                        Forts de plusieurs années d’expérience, nous offrons des services de haute qualité pour les
+                        <em>bureaux, commerces, vitres</em>, <em>immeubles résidentiels</em> et <em>fin de
+                            chantier</em>.
+                    </p>
+                    <div class="mission">
+                        <i class="fas fa-broom"></i>
+                        <p>Offrir un service fiable, rapide et soigné, avec une attention particulière aux détails et à
+                            la satisfaction client.</p>
+                    </div>
+                    <a href="#contact" class="btn-about">Demander un devis</a>
+                </div>
+
+                <div class="image-zone">
+                    <img src="./public/img/bannier/1000034480.jpg" alt="Présentation Morais Cleaning" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nos services</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="./public/img/cart/1000034285.jpg" alt="Nettoyage Airbnb" />
+                    <h2>Nettoyage d'Appartement et Airbnb</h2>
+                    <ul>
+                        <li>Nettoyage complet après séjour ou location</li>
+                        <li>Désinfection des surfaces et sanitaires</li>
+                        <li>Lavage du linge et préparation du logement</li>
+                        <li>Vitres, sols et ambiance fraîche</li>
+                        <li>Service rapide, discret et pro</li>
+                    </ul>
+                    <a href="./public/html/nettoyage-appartement.html" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/1000034286.jpg" alt="Après événement" />
+                    <h2>Nettoyage après événement</h2>
+                    <ul>
+                        <li>Événements : mariages, anniversaires, soirées</li>
+                        <li>Sols, vitres, surfaces impeccables</li>
+                        <li>Déchets évacués</li>
+                        <li>Produits écologiques</li>
+                        <li>Respect et discrétion</li>
+                    </ul>
+                    <a href="./public/html/Nettoyage-événement.html" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/ChatGPT Image 26 avr. 2025, 21_46_14.png" alt="Vitres" />
+                    <h2>Lavage de vitres</h2>
+                    <ul>
+                        <li>Intérieur & extérieur</li>
+                        <li>Grandes surfaces vitrées</li>
+                        <li>Équipement sécurisé</li>
+                        <li>Finitions sans traces</li>
+                        <li>Produits écoresponsables</li>
+                    </ul>
+                    <a href="./public/html/lavage-vitre.html" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/ChatGPT Image 26 avr. 2025, 21_59_53.png" alt="Tapis" />
+                    <h2>Nettoyage de tapis</h2>
+                    <ul>
+                        <li>Traitement en profondeur</li>
+                        <li>Anti-tâches & anti-acariens</li>
+                        <li>Élimination des odeurs</li>
+                        <li>Techniques spécifiques</li>
+                        <li>Séchage rapide</li>
+                    </ul>
+                    <a href="#" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/1000034290.jpg" alt="Bureaux" />
+                    <h2>Nettoyage de bureaux</h2>
+                    <ul>
+                        <li>Postes de travail & open space</li>
+                        <li>Sols, vitres, sanitaires</li>
+                        <li>Espaces communs propres</li>
+                        <li>Déchets & recyclage</li>
+                        <li>Fréquence adaptée</li>
+                    </ul>
+                    <a href="#" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/ChatGPT Image 1 mai 2025, 00_11_30.png" alt="Après chantier" />
+                    <h2>Nettoyage après chantier</h2>
+                    <ul>
+                        <li>Enlèvement des gravats</li>
+                        <li>Dépoussiérage complet</li>
+                        <li>Sols, vitres, murs</li>
+                        <li>Désinfection sanitaire</li>
+                        <li>Prêt à emménager</li>
+                    </ul>
+                    <a href="#" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/resized_image.png" alt="Espaces pro" />
+                    <h2>Entretien espaces commerciaux</h2>
+                    <ul>
+                        <li>Boutiques, restos, salons</li>
+                        <li>Vitrines & comptoirs</li>
+                        <li>Zonage clients/nettoyage précis</li>
+                        <li>Sols brillants, sanitaires clean</li>
+                        <li>Contrat sur mesure</li>
+                    </ul>
+                    <a href="#" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/ChatGPT Image 1 mai 2025, 00_18_48.png" alt="Résidences" />
+                    <h2>Résidences & immeubles</h2>
+                    <ul>
+                        <li>Escaliers, halls, ascenseurs</li>
+                        <li>Locaux poubelles</li>
+                        <li>Parkings & caves</li>
+                        <li>Interventions programmées</li>
+                        <li>Entretien durable</li>
+                    </ul>
+                    <a href="#" class="btn">Savoir plus</a>
+                </div>
+
+                <div class="service-card">
+                    <img src="./public/img/cart/ChatGPT Image 1 mai 2025, 00_23_20.png" alt="Haute pression" />
+                    <h2>Nettoyage haute pression</h2>
+                    <ul>
+                        <li>Façades, murets, trottoirs</li>
+                        <li>Terrasses, garages, mobilier</li>
+                        <li>Dégraissage et démoussage</li>
+                        <li>Résultat éclatant</li>
+                        <li>Intervention sécurisée</li>
+                    </ul>
+                    <a href="#" class="btn">Savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-grid">
+
+                <!-- Infos de contact -->
+                <div class="contact-info">
+                    <h3><i class="fas fa-phone-alt"></i> Téléphone</h3>
+                    <p><a href="tel:+32478951269">+32 478 95 12 69</a></p>
+                    <p><a href="tel:+32474336925">+32 474 33 69 25</a></p>
+
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p><a href="mailto:morais.issac9@hotmail.com">morais.issac9@hotmail.com</a></p>
+
+                    <h3><i class="fas fa-map-marker-alt"></i> Adresse</h3>
+                    <p>
+                        <a href="https://maps.app.goo.gl/B24cahZzowDw8JnY7" target="_blank">
+                            Rue de la Tarantelle 2, 1070 Anderlecht3
+                        </a>
+                    </p>
+
+                    <h3><i class="fas fa-clock"></i> Horaires</h3>
+                    <p>Lundi - Vendredi : Ouvert 24h/24<br>Week-end : Fermé</p>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="contact-form">
+                    <form>
+                        <input type="text" name="name" placeholder="Votre nom" required />
+                        <input type="email" name="email" placeholder="Votre email" required />
+                        <input type="text" name="address" placeholder="Votre adresse" />
+                        <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Script principal -->
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
