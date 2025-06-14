@@ -15,3 +15,12 @@ dropdownToggle.addEventListener("click", function (e) {
     dropdown.classList.toggle("open");
   }
 });
+   window.addEventListener('load', () => {
+      const title = document.getElementById('hero-title');
+      const subtitle = document.getElementById('hero-subtitle');
+      const buttons = document.getElementById('hero-buttons');
+
+      setTimeout(() => title.classList.add('show'), 300);
+      setTimeout(() => subtitle.classList.add('show'), 1000);
+      setTimeout(() => buttons.classList.add('show'), 1700);
+    });
