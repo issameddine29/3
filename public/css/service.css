@@ -1,3 +1,20 @@
+:root {
+  --primary: #0ff1ce;
+  --secondary: #00c6ff;
+  --dark-bg: #0a0f1c;
+  --text-color: #e0e0e0;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --accent: #0ff1ce;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--dark-bg);
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+}
+
 
 .navbar-container {
   position: sticky;
@@ -17,7 +34,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 70px;
 }
 
 .toggle-btn {
@@ -84,6 +101,160 @@
   border-radius: 20px;
   font-weight: bold;
 }
+
+
+   /* Bannière animée */
+.banner {
+    position: relative;
+  height: 100vh;
+  background-image: url('../img/bannier/ChatGPT%20Image%2028%20avr.%202025%2C%2015_02_13.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.banner a.button {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #000;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 15px var(--secondary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner a.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--primary);
+}
+
+/* Section */
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--glass-bg);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.03);
+}
+
+h2, h3 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Formulaire */
+form input, form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #bbb;
+}
+
+form button {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #000;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--accent);
+}
+
+footer {
+  background: #000814;
+  color: #888;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+   .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    .card {
+      
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+
+    .card img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
 
 @media (max-width: 991px) {
   .toggle-btn {

@@ -15,3 +15,16 @@ dropdownToggle.addEventListener("click", function (e) {
     dropdown.classList.toggle("open");
   }
 });
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray("section").forEach(section => {
+    gsap.from(section, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none none"
+      }
+    });
+  });

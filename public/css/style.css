@@ -1,3 +1,74 @@
+:root {
+  --color-primary: #005f73;     /* Bleu profond */
+  --color-secondary: #0a9396;   /* Bleu/vert frais */
+  --color-accent: #94d2bd;      /* Vert menthe doux */
+  --color-light: #f7f9fc;       /* Fond clair neutre */
+  --color-dark: #001219;        /* Très sombre */
+  --color-warning: #ee9b00;     /* Orange doré */
+  --color-danger: #ae2012;      /* Rouge profond */
+}
+
+body {
+  background: linear-gradient(to bottom right, #e6f0ef, #cce3e1);
+  color: var(--color-dark);
+  font-family: 'Poppins', sans-serif;
+}
+.navbar {
+  background-color: var(--color-dark);
+}
+.nav-links a {
+  color: var(--color-accent);
+}
+.nav-links a:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--color-secondary);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.section-title,
+.section-subtitle {
+  color: var(--color-primary);
+}
+
+.icon-card i {
+  color: var(--color-secondary);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary);
+}
+
+.team-card h3 {
+  color: var(--color-primary);
+}
+
+
+
 /* RESET GÉNÉRAL */
 * {
   margin: 0;
@@ -120,7 +191,8 @@ html {
   position: relative;
   z-index: 2;
   margin-left: 5%;
-  background: rgba(255, 255, 255, 0.95);
+   background: rgba(255, 255, 255, 0.95); /* Garde la clarté */
+  color: var(--color-dark);
   padding: 40px 30px;
   border-radius: 16px;
   max-width: 480px;
@@ -377,12 +449,12 @@ html {
 .card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #0077cc;
+   color: var(--color-primary);
 }
 
 .card p {
   font-size: 0.95rem;
-  color: #555;
+   color: var(--color-dark);
   min-height: 60px;
 }
 
@@ -461,7 +533,7 @@ html {
 }
 
 .btn-secondary:hover {
-  background-color: #005fa3;
+  background-color: #a30000;
 }
 
 /* ===== SECTION ÉQUIPE ===== */
