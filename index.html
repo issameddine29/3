@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -45,9 +46,12 @@
         <section class="hero-banner">
             <div class="overlay"></div>
             <div class="hero-content">
-                <h1 id="hero-title">Votre Propreté, Notre Excellence</h1>
-                <p id="hero-subtitle">Des services de nettoyage haut de gamme pour bureaux, Airbnb, vitres et chantiers.
-                    Discrétion, rigueur, perfection.</p>
+                <h1 id="hero-title">L’Excellence du Nettoyage, Service Après Service.</h1>
+                <p id="hero-subtitle">
+                    De l’Airbnb à la résidence, du bureau au chantier, en passant par les
+                    événements et les commerces, Morais Cleaning garantit un résultat impeccable à chaque
+                    intervention.
+                </p>
                 <div class="hero-buttons" id="hero-buttons">
                     <a href="#services" class="btn btn-primary">Découvrir nos services</a>
                     <a href="#devis" class="btn btn-outline">Demander un devis</a>
@@ -55,8 +59,152 @@
             </div>
         </section>
 
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">À propos de Morais Cleaning</h2>
+                <p class="section-subtitle">Votre partenaire de confiance pour une propreté irréprochable</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Morais Cleaning est bien plus qu’une entreprise de nettoyage. Nous sommes animés par une
+                            passion : offrir un environnement sain, net et agréable à nos clients.</p>
+                        <p>Grâce à notre expertise, nous accompagnons les particuliers, les professionnels et les
+                            gestionnaires immobiliers avec rigueur, ponctualité et efficacité. Nous privilégions
+                            l’humain, l’écoute et la flexibilité pour adapter nos interventions à vos besoins réels.</p>
+                    </div>
+                    <div class="about-illustration">
+                        <img src="./public/img/bannier/1000034480.jpg" alt="Illustration Morais Cleaning">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-icons-section">
+            <div class="container">
+                <div class="section-title1">
+                    <h2>Pourquoi choisir Morais Cleaning ?</h2>
+                    <p>Notre engagement envers l'excellence, l'efficacité et la qualité de service.
+                    </p>
+                </div>
+                <div class="icon-cards">
+                    <div class="icon-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Intervention Efficace</h3>
+                        <p>Réponse rapide et immédiate à chaque demande pour assurer la continuité de vos activités.
+                        </p>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-medal"></i>
+                        <h3>Qualité Garantie</h3>
+                        <p>Des normes rigoureuses pour satisfaire les clients les plus exigeants.</p>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h3>Équipe d’Experts</h3>
+                        <p>Des solutions professionnelles parfaitement adaptées à vos besoins.</p>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Réactivité Optimale</h3>
+                        <p>Des interventions rapides, efficaces et fiables 24h/24.</p>
+                    </div>
+                </div>
+                <a href="#contact" class="btn-contact">Contactez-nous</a>
+            </div>
+        </section>
+        <section class="services-section">
+            <h2>Nos Services</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/1000034290.jpg" alt="Nettoyage de bureaux">
+                        <h3>Nettoyage de bureaux</h3>
+                        <h4>Gardez vos locaux impeccables et accueillants</h4>
+                        <p>Nos équipes interviennent selon vos horaires pour garantir un environnement de travail
+                            propre, sain et agréable.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/1000034285.jpg" alt="Nettoyage Airbnb">
+                        <h3>Nettoyage Airbnb</h3>
+                        <h4>Entre chaque séjour, une remise à neuf</h4>
+                        <p>Nettoyage complet, changement du linge, désodorisation et vérification de chaque détail.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/ChatGPT Image 26 avr. 2025, 21_46_14.png" alt="Lavage de vitres">
+                        <h3>Lavage de vitres</h3>
+                        <h4>Transparence professionnelle</h4>
+                        <p>Nettoyage intérieur et extérieur avec finition sans trace pour une visibilité parfaite.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/ChatGPT Image 1 mai 2025, 00_11_30.png"
+                            alt="Nettoyage après chantier">
+                        <h3>Nettoyage après chantier</h3>
+                        <h4>Faites place nette après vos travaux</h4>
+                        <p>Évacuation des gravats, dépoussiérage complet, vitres, sols et désinfection.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/ChatGPT Image 1 mai 2025, 00_18_48.png"
+                            alt="Entretien de résidences">
+                        <h3>Entretien de résidences</h3>
+                        <h4>Pour une copropriété propre et accueillante</h4>
+                        <p>Nettoyage des parties communes, escaliers, halls, caves et locaux techniques.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/ChatGPT Image 1 mai 2025, 00_23_20.png"
+                            alt="Nettoyage haute pression">
+                        <h3>Nettoyage haute pression</h3>
+                        <h4>Redonnez vie à vos surfaces extérieures</h4>
+                        <p>Dalles, murs, façades ou mobilier urbain : tout redevient comme neuf.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/ChatGPT Image 26 avr. 2025, 21_59_53.png" alt="Nettoyage de tapis">
+                        <h3>Nettoyage de tapis</h3>
+                        <h4>Éliminez acariens et saletés incrustées</h4>
+                        <p>Shampoing, aspiration et séchage rapide pour une hygiène parfaite.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/1000034286.jpg" alt="Nettoyage événementiel">
+                        <h3>Nettoyage événementiel</h3>
+                        <h4>Avant et après vos événements</h4>
+                        <p>Prestation rapide et efficace pour salons, mariages, réceptions et fêtes.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="./public/img/cart/resized_image.png" alt="Entretien professionnel">
+                        <h3>Entretien professionnel</h3>
+                        <h4>Des solutions sur-mesure pour vos locaux</h4>
+                        <p>Cabinets, ateliers, commerces : prestations adaptées à chaque besoin.</p>
+                        <a href="#" class="btn-secondary">En savoir plus</a>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+
+
     </main>
     <script src="./public/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
